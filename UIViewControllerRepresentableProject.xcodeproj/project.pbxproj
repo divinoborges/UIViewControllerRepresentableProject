@@ -11,6 +11,7 @@
 		667BE6F629E477D00088441B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667BE6F529E477D00088441B /* ContentView.swift */; };
 		667BE6F829E477D20088441B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667BE6F729E477D20088441B /* Assets.xcassets */; };
 		667BE6FB29E477D20088441B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667BE6FA29E477D20088441B /* Preview Assets.xcassets */; };
+		667BE70229E47C620088441B /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667BE70129E47C620088441B /* ImagePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		667BE6F529E477D00088441B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		667BE6F729E477D20088441B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		667BE6FA29E477D20088441B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		667BE70129E47C620088441B /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				667BE6F329E477D00088441B /* UIViewControllerRepresentableProjectApp.swift */,
 				667BE6F529E477D00088441B /* ContentView.swift */,
+				667BE70129E47C620088441B /* ImagePickerView.swift */,
 				667BE6F729E477D20088441B /* Assets.xcassets */,
 				667BE6F929E477D20088441B /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				667BE6F629E477D00088441B /* ContentView.swift in Sources */,
+				667BE70229E47C620088441B /* ImagePickerView.swift in Sources */,
 				667BE6F429E477D00088441B /* UIViewControllerRepresentableProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

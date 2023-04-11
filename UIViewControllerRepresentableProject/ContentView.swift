@@ -8,14 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showImagePicker = false
+    @State private var selectedImage: UIImage?
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Choose an Image!")
+                .font(.largeTitle)
+                .padding()
+            Spacer()
+            imageView
+                .resizable()
+                .scaledToFit()
+                .onTapGesture {
+                    showImagePicker = true
+                }
+                .padding()
+            Spacer()
+            Spacer()
         }
-        .padding()
+        .sheet(isPresented: $showImagePicker) {
+            ImagePickerView(selectedImage: $selectedImage)
+        }
+    }
+    
+    var imageView: Image {
+        guard let selectedImage = selectedImage else {
+            return Image(systemName: "photo")
+        }
+        return Image(uiImage: selectedImage)
     }
 }
 
